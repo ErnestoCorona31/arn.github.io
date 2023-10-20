@@ -11,24 +11,24 @@
 	
 	<body style="margin : 0px; overflow: hidden;">
  <a-scene arjs embedded renderer="logarithmicDepthBuffer: true; " vr-mode-ui="enabled:false" gesture-detector id="scene">
-	<a-assets>
-	<a-asset-item id="monito-glb" src="female_anatomy_2 (1).glb"></a-asset-item>
+			<a-assets>
+				<a-asset-item id="monito-glb" src="female_anatomy_2 (1).glb"></a-asset-item>
         <a-asset-item id="mono-glb" src="brain_areas (1).glb"></a-asset-item>
         <a-asset-item id="cerebro-glb" src="Monito.glb"></a-asset-item>
 			</a-assets>
 			<a-marker type="barcode" value="9">
 			<a-entity gltf-model="#monito-glb" 
-            scale="1 1 1" position="0 0.281 0" rotation="0 0 0" >
+            scale="1 1 1" position="0 0.281 0" rotation="0 0 0" animation="property: rotation; to: 0.1 360 1; loop: true; dur: 5000">
                </a-entity>
 			</a-marker>
   			<a-marker type="barcode" value="4">
         <a-entity gltf-model="#mono-glb" 
-            scale="1 1 1" position="3 0.281 0" rotation="0 0 0">
+            scale="1 1 1" position="3 0.281 0" rotation="0 0 0" animation="property: rotation; to: 0.1 360 1; loop: true; dur: 5000">
 	    </a-entity>
    </a-marker>
-     			<a-marker type="barcode" value="5">
+<a-marker type="barcode" value="5">
         <a-entity gltf-model="#cerebro-glb" 
-            scale="1 1 1" position="3 0.281 0" rotation="0 0 0" >
+            scale="1 1 1" position="3 0.281 0" rotation="0 0 0" animation="property: rotation; to: 0.1 360 1; loop: true; dur: 5000">
 	    </a-entity>
    </a-marker>
 			<a-entity camera></a-entity>
